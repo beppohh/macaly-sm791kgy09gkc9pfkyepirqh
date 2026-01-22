@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -16,14 +14,14 @@ import {
   Zap,
   Database,
   LineChart,
-  Sparkles
+  Sparkles,
+  ExternalLink,
+  BookOpen
 } from 'lucide-react';
 
 export default function SalesPageContent() {
   return (
-    <>
-      <Header />
-      <main className="min-h-screen">
+    <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-20 bg-gradient-to-br from-brand-navy via-primary to-brand-navy overflow-hidden">
           {/* Nautical Wave Graphics */}
@@ -526,6 +524,240 @@ export default function SalesPageContent() {
           </div>
         </section>
 
+        {/* Wissen Section - Internal Links */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <BookOpen className="h-4 w-4" />
+                  Sales-Wissen
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
+                  Vertiefen Sie Ihr Vertriebs-Know-how
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  In unserem Wissensbereich finden Sie praxisnahe Antworten auf die wichtigsten Fragen rund um Vertrieb und Sales-Strategien.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Link href="/wissen/warum-scheitern-sales-strategien-im-mittelstand" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">📊</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Warum scheitern Sales-Strategien?
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Die häufigsten Fehler im Mittelstand und wie Sie sie vermeiden.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/warum-startups-externe-sales-strukturierung-brauchen" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">🚀</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Externe Sales-Strukturierung
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Warum StartUps von externer Vertriebsberatung profitieren.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/prozess-dokumentation-wichtigkeit" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">📚</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Prozess-Dokumentation
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Warum dokumentierte Prozesse der Schlüssel zur Skalierung sind.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/bauchgefuehl-im-vertrieb" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">⚖️</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Bauchgefühl vs. Daten
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Warum datenbasierte Entscheidungen im Vertrieb erfolgreicher sind.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/unternehmenskultur-rolle-im-sales" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">👥</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Sales-Kultur aufbauen
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Wie eine gesunde Unternehmenskultur den Vertriebserfolg fördert.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary bg-muted/50">
+                    <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+                      <ArrowRight className="h-8 w-8 text-secondary mb-3 group-hover:translate-x-1 transition-transform" />
+                      <h3 className="font-bold text-primary mb-2">
+                        Alle Artikel entdecken
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        20+ Fachartikel zu Sales & Marketing
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* External Resources Section */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
+                  Weiterführende Ressourcen
+                </h2>
+                <p className="text-muted-foreground">
+                  Empfohlene externe Quellen für Sales-Professionals
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a 
+                  href="https://www.salesforce.com/de/resources/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-blue-600 font-bold text-sm">SF</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            Salesforce Resources
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          CRM Best Practices, Sales-Guides und Branchenreports
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.hubspot.de/sales" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-orange-600 font-bold text-sm">HS</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            HubSpot Sales Blog
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Vertriebstipps, Templates und Sales-Strategien
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.vertriebszeitung.de/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-green-600 font-bold text-sm">VZ</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            Vertriebszeitung
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Deutschsprachiges Fachmagazin für Vertrieb und Sales
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.bdvt.de/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-purple-600 font-bold text-xs">BDVT</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            BDVT
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Berufsverband für Training, Beratung und Coaching
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-sm text-muted-foreground">
+                  Entdecken Sie auch unsere <Link href="/marketing" className="text-secondary hover:underline font-medium">Marketing-Beratung</Link> und <Link href="/blog" className="text-secondary hover:underline font-medium">Best-Practice-Artikel</Link>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section id="contact" className="py-20 bg-gradient-to-br from-primary to-brand-navy text-white">
           <div className="container mx-auto px-4 sm:px-6">
@@ -575,8 +807,6 @@ export default function SalesPageContent() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </div>
   );
 }
