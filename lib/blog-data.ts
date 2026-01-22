@@ -175,7 +175,7 @@ Nehmen Sie jetzt Kontakt auf – wir beraten Sie gerne unverbindlich.
     excerpt: 'Wie bringt man frischen Wind in den Online-Auftritt eines etablierten Unternehmens? Genau diese Frage...',
     date: '29. März 2025',
     category: 'Kunden',
-    image: 'https://brehm-consultinging.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-05-20-um-15.50.35-900x550.png',
+    image: 'https://images.pexels.com/photos/139387/pexels-photo-139387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     content: `
 Wie bringt man frischen Wind in den Online-Auftritt eines etablierten Unternehmens? Diese Frage stellte sich die Vendomat AG, ein führender Anbieter im Bereich Digitalisierung in der Gastronomie. Die Antwort: ein umfassender Website-Relaunch – konzipiert, begleitet und realisiert in enger Zusammenarbeit mit Brehm Consulting.
 
@@ -265,7 +265,7 @@ Wollen auch Sie Ihre Website neu denken? Mehr Sichtbarkeit, mehr Anfragen, mehr 
     excerpt: 'In einer digitalisierten Welt, in der Kundenerwartungen stetig steigen und Prozesse immer schneller, transparenter...',
     date: '29. Januar 2025',
     category: 'Best Practice',
-    image: 'https://brehm-consultinging.com/wp-content/uploads/2025/01/Bildschirmfoto-2025-05-20-um-18.24.00-900x550.png',
+    image: 'https://images.pexels.com/photos/577195/pexels-photo-577195.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     content: `
 In einer digitalisierten Welt, in der Kundenerwartungen stetig steigen und Prozesse immer schneller funktionieren müssen, wird der Einsatz eines professionellen CRM-Systems zur Grundvoraussetzung für nachhaltigen Erfolg. Was früher vielleicht nur Konzernen vorbehalten war, ist heute auch für mittelständische IT- und Softwareanbieter in der Gastronomie und Hotellerie unverzichtbar.
 

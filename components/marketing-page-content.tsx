@@ -1,7 +1,5 @@
 'use client';
 
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -19,14 +17,14 @@ import {
   Target,
   Users,
   Lightbulb,
-  Sparkles
+  Sparkles,
+  ExternalLink,
+  BookOpen
 } from 'lucide-react';
 
 export default function MarketingPageContent() {
   return (
-    <>
-      <Header />
-      <main className="min-h-screen">
+    <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-20 bg-gradient-to-br from-brand-navy via-primary to-brand-navy overflow-hidden">
           {/* Nautical Wave Graphics */}
@@ -539,6 +537,240 @@ export default function MarketingPageContent() {
           </div>
         </section>
 
+        {/* Wissen Section - Internal Links */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <BookOpen className="h-4 w-4" />
+                  Marketing-Wissen
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
+                  Vertiefen Sie Ihr Marketing-Know-how
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  In unserem Wissensbereich finden Sie praxisnahe Antworten auf die wichtigsten Fragen rund um Marketing und Lead-Generierung.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Link href="/wissen/was-ist-ein-lead" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">🎯</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Was ist ein Lead?
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Verstehen Sie den Unterschied zwischen MQL und SQL und wie Sie Leads richtig qualifizieren.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/sales-marketing-alignment" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">🤝</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Sales-Marketing-Alignment
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Wie Marketing und Vertrieb effektiv zusammenarbeiten und gemeinsame Ziele erreichen.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/positionierung-fuer-sales" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">🎯</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Positionierung für Sales
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Warum eine klare Positionierung der Schlüssel zu erfolgreichen Verkaufsgesprächen ist.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/groesster-hebel-umsatzwachstum" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">📈</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Größter Hebel für Umsatzwachstum
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Conversion-Rate-Optimierung statt Budgeterhöhung – der smarte Weg zu mehr Umsatz.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen/content-marketing-b2b" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary">
+                    <CardContent className="p-6">
+                      <span className="text-3xl mb-3 block">✍️</span>
+                      <h3 className="font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                        Content Marketing im B2B
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Wie Sie mit hochwertigem Content Vertrauen aufbauen und qualifizierte Leads generieren.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+
+                <Link href="/wissen" className="group">
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border-2 hover:border-secondary bg-muted/50">
+                    <CardContent className="p-6 flex flex-col items-center justify-center text-center h-full">
+                      <ArrowRight className="h-8 w-8 text-secondary mb-3 group-hover:translate-x-1 transition-transform" />
+                      <h3 className="font-bold text-primary mb-2">
+                        Alle Artikel entdecken
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        20+ Fachartikel zu Sales & Marketing
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* External Resources Section */}
+        <section className="py-16 bg-muted/50">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-10">
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
+                  Weiterführende Ressourcen
+                </h2>
+                <p className="text-muted-foreground">
+                  Empfohlene externe Quellen für Marketing-Professionals
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a 
+                  href="https://www.hubspot.de/marketing-statistics" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-orange-600 font-bold text-sm">HS</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            HubSpot Marketing-Statistiken
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Aktuelle Benchmarks und Trends im digitalen Marketing
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.thinkwithgoogle.com/intl/de-de/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-blue-600 font-bold text-sm">G</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            Think with Google
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Consumer Insights und Marketing-Trends von Google
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.bvdw.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-green-600 font-bold text-xs">BVDW</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            BVDW
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Bundesverband Digitale Wirtschaft – Studien und Leitfäden
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+
+                <a 
+                  href="https://www.dehoga-bundesverband.de/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 border hover:border-secondary/50">
+                    <CardContent className="p-5 flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+                        <span className="text-purple-600 font-bold text-xs">DH</span>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="font-semibold text-primary group-hover:text-secondary transition-colors">
+                            DEHOGA Bundesverband
+                          </h3>
+                          <ExternalLink className="h-3 w-3 text-muted-foreground" />
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Branchenverband für Hotellerie und Gastronomie in Deutschland
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-sm text-muted-foreground">
+                  Entdecken Sie auch unsere <Link href="/sales" className="text-secondary hover:underline font-medium">Vertriebsberatung</Link> und <Link href="/blog" className="text-secondary hover:underline font-medium">Best-Practice-Artikel</Link>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section id="contact" className="py-20 bg-gradient-to-br from-primary to-brand-navy text-white">
           <div className="container mx-auto px-4 sm:px-6">
@@ -588,8 +820,6 @@ export default function MarketingPageContent() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+    </div>
   );
 }
