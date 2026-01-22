@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Create separate data file for Sales & Marketing Wissen articles (wissen-data.ts)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Move the 20 Q&A articles from blog-data.ts to wissen-data.ts",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create new route /wissen with page.tsx and content component",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update header navigation to show both 'Blog' and 'Sales & Marketing Wissen'",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Restore original blog metadata in metadata.json",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Add new metadata for /wissen route in metadata.json",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Update blog-page-content.tsx to show original blog heading",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Verify both routes work correctly and display the right content",
+    "status": "pending",
+    "priority": "medium",
+    "id": "8"
+  }
+]

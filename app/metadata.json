@@ -1,0 +1,44 @@
+{
+  "/": {
+    "title": "Brehm Consulting | Unternehmensberatung für StartUps, Marketing & Sales",
+    "description": "Strategisches Wachstum für StartUps und Mittelstandsunternehmen im Außer-Haus-Markt. Spezialisiert auf Vertriebsstrategie, Marketing-Mix und Business Management in Deutschland & Schweiz. 30+ Jahre Expertise in Hospitality, Food Service & Tech.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/marketing": {
+    "title": "Marketing Beratung für StartUps | Lead Generierung, Performance Marketing & AI-Tools",
+    "description": "Professionelle Marketing Beratung für StartUps im Außer-Haus-Markt. Marktforschung, Marketingstrategie, SEO/GEO, Social Media, Marketing Automation, Content-Erstellung & KI-Optimierung. Website-Neuaufbau mit modernen Plattformen, LLM-freundliche Strukturierung und AI-Tool-Integration. Optimieren Sie Ihre Leadgenerierung und Performance-Marketing mit Brehm Consulting.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/sales": {
+    "title": "Sales Beratung für StartUps | Vertriebsstrategie & Salesforce-Integration",
+    "description": "Strategische Vertriebsberatung für StartUps im Außer-Haus-Markt. Situationsanalyse, Zieldefinition, Vertriebsmodelle, Salesforce-Integration und CRM-Beratung. Optimieren Sie Ihre Verkaufszahlen, Conversion Rates und Teamdynamik mit praxiserprobter Sales-Expertise. AI-gesteuerte Prozessoptimierung für nachhaltiges Wachstum.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/8062287/pexels-photo-8062287.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/team": {
+    "title": "Unser Experten-Team | Brehm Consulting - Marketing, Sales & Design Spezialisten",
+    "description": "Lernen Sie unser erfahrenes Berater-Team kennen: 30+ Jahre kombinierte Expertise in StartUp-Beratung, Marketing, Sales, SEO, Salesforce, Design und AI-Integration. Von erfolgreichen Gründern bis zu Performance-Marketing-Experten - Ihr Partner für nachhaltiges Wachstum.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/blog": {
+    "title": "Blog | Brehm Consulting - Best Practices, Kunden-Erfolge & Marketing-Insights",
+    "description": "Aktuelle Beiträge zu Marketing, Sales, CRM-Systemen, Website-Optimierung und erfolgreichen Kundenprojekten. Expertenwissen aus der Praxis für StartUps und Mittelständler im Außer-Haus-Markt. Best Practices, Mitbewerberanalysen und bewährte Strategien.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/wissen": {
+    "title": "Sales & Marketing Wissen für B2B | 20 Experten-Antworten zu Vertrieb & Lead-Management",
+    "description": "Expertenwissen zu B2B-Vertriebsstrategien und Lead-Management für Deutschland und Schweiz. 20 praxisnahe Artikel zu Sales-Prozessen, MQL/SQL-Qualifizierung, CRM-Auswahl, Lead-Nurturing und Conversion-Optimierung. Strategisches Wissen für Mittelstand und StartUps von Brehm Consulting.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  }
+}
