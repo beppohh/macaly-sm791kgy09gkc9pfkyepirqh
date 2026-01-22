@@ -10,9 +10,12 @@ interface PageProps {
 
 export async function generateStaticParams() {
   const slugs = getAllWissenSlugs();
-  return slugs.map((slug) => ({
-    slug: slug,
-  }));
+
+  // Guard: Next.js can prefetch the route pattern ("/wissen/[slug]") in export mode.
+  // If it's not listed here, it triggers a 500. Including it ensures a clean 404 via notFound().
+  const safeSlugs = Array.from(new Set([...slugs, '[slug]']));
+
+  return safeSlugs.map((slug) => ({ slug }));
 }
 
 export default async function WissenArticlePage({ params }: PageProps) {
