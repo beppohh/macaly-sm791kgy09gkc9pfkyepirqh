@@ -9,7 +9,12 @@ interface BlogArticlePageProps {
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
-  return slugs.map((slug) => ({ slug }));
+
+  // Guard: Next.js can prefetch the route pattern ("/blog/[slug]") in export mode.
+  // If it's not listed here, it triggers a 500. Including it ensures a clean 404 via notFound().
+  const safeSlugs = Array.from(new Set([...slugs, '[slug]']));
+
+  return safeSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: BlogArticlePageProps): Promise<Metadata> {

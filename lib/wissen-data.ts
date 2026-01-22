@@ -11,6 +11,227 @@ export interface WissenPost {
 
 export const wissenPosts: WissenPost[] = [
   {
+    slug: 'content-marketing-b2b',
+    title: 'Wie funktioniert Content Marketing im B2B?',
+    excerpt: 'Content Marketing im B2B unterscheidet sich grundlegend vom B2C. Erfahren Sie, wie Sie mit strategischem Content qualifizierte Leads generieren.',
+    date: '20. Januar 2025',
+    category: 'Marketing',
+    emoji: '📝',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750',
+    content: `
+Content Marketing im B2B ist eine der effektivsten Methoden, um qualifizierte Leads zu generieren und Vertrauen bei potenziellen Kunden aufzubauen. Doch es unterscheidet sich grundlegend vom B2C-Marketing.
+
+## Warum Content Marketing im B2B anders funktioniert
+
+Im B2B-Bereich sind Kaufentscheidungen komplexer:
+
+- **Längere Entscheidungszyklen** – Oft 3-12 Monate
+- **Mehrere Entscheider** – Buying Center mit verschiedenen Stakeholdern
+- **Höhere Investitionen** – Mehr Risiko, mehr Recherche
+- **Rationale Entscheidungen** – ROI und Business Case stehen im Vordergrund
+
+Das bedeutet: B2B-Content muss informieren, Expertise demonstrieren und Vertrauen aufbauen – nicht unterhalten.
+
+## Die Content-Pyramide für B2B
+
+### Top of Funnel (TOFU) – Awareness
+**Ziel:** Aufmerksamkeit generieren, Reichweite aufbauen
+
+**Content-Formate:**
+- Blog-Artikel zu Branchenthemen
+- LinkedIn-Posts und Thought Leadership
+- Infografiken und Statistiken
+- Podcasts und Video-Content
+
+**Beispiel:** "10 Trends im Hospitality-Markt 2025"
+
+### Middle of Funnel (MOFU) – Consideration
+**Ziel:** Leads qualifizieren, Expertise demonstrieren
+
+**Content-Formate:**
+- Whitepaper und E-Books
+- Webinare und Online-Kurse
+- Case Studies
+- Vergleichsstudien
+
+**Beispiel:** "Whitepaper: CRM-Implementierung in der Gastronomie"
+
+### Bottom of Funnel (BOFU) – Decision
+**Ziel:** Kaufentscheidung unterstützen
+
+**Content-Formate:**
+- ROI-Calculator
+- Produktdemos
+- Kundenreferenzen
+- Detaillierte Fallstudien
+
+**Beispiel:** "ROI-Rechner: Was bringt Ihnen ein CRM-System?"
+
+## Die 5 Säulen erfolgreichen B2B-Content-Marketings
+
+### 1. Zielgruppen-Fokus
+
+Bevor Sie Content erstellen, müssen Sie Ihre Buyer Personas kennen:
+
+- **Wer** sind Ihre idealen Kunden?
+- **Welche Probleme** haben sie?
+- **Wo** suchen sie nach Informationen?
+- **Welche Fragen** stellen sie in jeder Phase?
+
+**Tipp:** Führen Sie Interviews mit bestehenden Kunden, um echte Insights zu gewinnen.
+
+### 2. SEO-Strategie
+
+B2B-Entscheider recherchieren bei Google. Ihre Inhalte müssen gefunden werden:
+
+- **Keyword-Recherche** – Welche Begriffe sucht Ihre Zielgruppe?
+- **On-Page-SEO** – Optimierte Titel, Meta-Descriptions, Struktur
+- **Content-Cluster** – Thematisch verknüpfte Inhalte
+- **Backlink-Aufbau** – Autorität durch externe Verlinkungen
+
+**Beispiel:** Statt "Marketing-Tipps" → "Marketing-Strategie für Startups im Hospitality-Bereich"
+
+### 3. Thought Leadership
+
+Positionieren Sie sich als Experte in Ihrer Nische:
+
+- **Eigene Perspektiven** – Nicht nur wiederholen, was andere sagen
+- **Daten und Studien** – Eigene Erhebungen und Analysen
+- **Prognosen** – Wohin entwickelt sich der Markt?
+- **Kontroverse Meinungen** – Mut zur klaren Positionierung
+
+### 4. Distribution
+
+Der beste Content nützt nichts, wenn ihn niemand sieht:
+
+**Owned Media:**
+- Website/Blog
+- Newsletter
+- Social Media Profile
+
+**Earned Media:**
+- Gastbeiträge
+- PR und Pressearbeit
+- Podcast-Auftritte
+
+**Paid Media:**
+- LinkedIn Ads
+- Google Ads
+- Sponsored Content
+
+### 5. Conversion-Optimierung
+
+Content muss zu Leads führen:
+
+- **Call-to-Actions** – Klare Handlungsaufforderungen
+- **Lead Magnets** – Wertvolle Downloads gegen Kontaktdaten
+- **Landing Pages** – Optimierte Conversion-Seiten
+- **Nurturing-Sequenzen** – Automatisierte Follow-up-E-Mails
+
+## Content-Formate, die im B2B funktionieren
+
+### Blog-Artikel
+**Vorteile:** SEO, Thought Leadership, niedrige Produktionskosten
+**Best Practice:** 1.500-3.000 Wörter, gut strukturiert, mit Grafiken
+
+### Whitepaper & E-Books
+**Vorteile:** Lead-Generierung, Expertise-Demonstration
+**Best Practice:** 10-30 Seiten, professionelles Design, actionable Insights
+
+### Case Studies
+**Vorteile:** Social Proof, konkrete Ergebnisse
+**Best Practice:** Problem → Lösung → Ergebnis, mit Zahlen
+
+### Webinare
+**Vorteile:** Interaktion, Lead-Qualifizierung
+**Best Practice:** 45-60 Minuten, Q&A-Session, Follow-up
+
+### Video-Content
+**Vorteile:** Engagement, Persönlichkeit zeigen
+**Best Practice:** Kurz (2-5 Min), professionelle Qualität, Untertitel
+
+## Metriken: Was Sie messen sollten
+
+### Traffic-Metriken
+- Unique Visitors
+- Page Views
+- Time on Page
+- Bounce Rate
+
+### Engagement-Metriken
+- Social Shares
+- Comments
+- Newsletter-Anmeldungen
+- Download-Zahlen
+
+### Lead-Metriken
+- MQLs generiert
+- Cost per Lead
+- Lead-to-Customer Conversion
+- Content-Attribution
+
+### Business-Metriken
+- Pipeline-Beitrag
+- Revenue-Attribution
+- Customer Acquisition Cost
+
+## Häufige Fehler im B2B-Content-Marketing
+
+### 1. Zu produktorientiert
+**Fehler:** Nur über eigene Produkte schreiben
+**Besser:** Probleme der Zielgruppe lösen
+
+### 2. Keine Strategie
+**Fehler:** Sporadisch Content veröffentlichen
+**Besser:** Redaktionsplan mit klaren Zielen
+
+### 3. Keine Distribution
+**Fehler:** "Publish and pray"
+**Besser:** 20% Erstellung, 80% Distribution
+
+### 4. Keine Conversion-Pfade
+**Fehler:** Content ohne Call-to-Action
+**Besser:** Jeder Content führt zum nächsten Schritt
+
+### 5. Keine Messung
+**Fehler:** Keine Ahnung, was funktioniert
+**Besser:** Klare KPIs und regelmäßige Analyse
+
+## Content-Marketing-Strategie in 5 Schritten
+
+### Schritt 1: Audit
+- Welchen Content haben Sie bereits?
+- Was funktioniert, was nicht?
+- Welche Lücken gibt es?
+
+### Schritt 2: Strategie
+- Ziele definieren (Traffic, Leads, Revenue)
+- Buyer Personas erstellen
+- Content-Themen priorisieren
+
+### Schritt 3: Planung
+- Redaktionskalender erstellen
+- Ressourcen planen
+- Workflows definieren
+
+### Schritt 4: Produktion
+- Content erstellen
+- Qualitätssicherung
+- SEO-Optimierung
+
+### Schritt 5: Distribution & Optimierung
+- Multi-Channel-Verbreitung
+- Performance messen
+- Kontinuierlich optimieren
+
+## Fazit
+
+Content Marketing im B2B ist ein Marathon, kein Sprint. Es braucht Zeit, bis sich Ergebnisse zeigen – aber die Investition lohnt sich. Unternehmen mit starkem Content-Marketing generieren 3x mehr Leads bei 62% niedrigeren Kosten als traditionelles Marketing.
+
+**Möchten Sie Ihre Content-Marketing-Strategie entwickeln? Sprechen Sie mit uns.**
+    `
+  },
+  {
     slug: 'warum-scheitern-sales-strategien-im-mittelstand',
     title: 'Warum scheitern Sales-Strategien im Mittelstand oft?',
     excerpt: 'Meist an fehlenden Standardprozessen und zu starker Abhängigkeit von einzelnen Top-Verkäufern. Erfahren Sie, wie Sie systematische Vertriebsstrukturen aufbauen.',
