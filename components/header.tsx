@@ -12,11 +12,13 @@ export default function Header() {
 
   const leistungenLinks = [
     { href: '/sales', label: 'Sales' },
+macaly/sm791kgy09gkc9pfkyepirqh-aQoR
     { href: '/marketing', label: 'Marketing' },
     { href: '/webdesign', label: 'Web-Konzepte' },
   ];
 
   const navLinks = [
+    { href: '/webdesign', label: 'Web-Konzepte' },
     { href: '/wissen', label: 'Sales & Marketing Wissen' },
     { href: '/blog', label: 'Blog' },
     { href: '/#contact', label: 'Kontakt' },
