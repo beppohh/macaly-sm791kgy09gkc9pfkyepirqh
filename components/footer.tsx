@@ -27,8 +27,8 @@ export default function Footer() {
               <p>Emil-Andresen-Straße 90g</p>
               <p>22529 Hamburg</p>
               <p className="pt-2">
-                <a href="tel:+4940209719000" className="hover:text-secondary transition-colors">
-                  +49 (40) 20 97 1900
+                <a href="tel:+494020972001" className="hover:text-secondary transition-colors">
+                  +49 (40) 20972001
                 </a>
               </p>
               <p>
