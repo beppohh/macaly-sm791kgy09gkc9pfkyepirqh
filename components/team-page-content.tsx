@@ -233,10 +233,10 @@ export default function TeamPageContent() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
-                href="tel:+494020971900" 
+                href="tel:+494020972001" 
                 className="inline-flex items-center justify-center px-8 py-4 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary/90 transition-colors shadow-lg hover:shadow-xl w-full sm:w-auto"
               >
-                +49 (40) 20 97 1900
+                +49 (40) 20972001
               </a>
               <a 
                 href="mailto:service@brehm-consulting.com" 

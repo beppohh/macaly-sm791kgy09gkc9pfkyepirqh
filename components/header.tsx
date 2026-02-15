@@ -12,9 +12,9 @@ export default function Header() {
   const navLinks = [
     { href: '/marketing', label: 'Marketing' },
     { href: '/sales', label: 'Sales' },
+    { href: '/webdesign', label: 'Web-Konzepte' },
     { href: '/wissen', label: 'Sales & Marketing Wissen' },
     { href: '/blog', label: 'Blog' },
-    { href: '/#services', label: 'Leistungen' },
     { href: '/#contact', label: 'Kontakt' },
   ];
 
