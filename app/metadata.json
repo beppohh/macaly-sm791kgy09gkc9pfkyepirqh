@@ -47,5 +47,19 @@
     "openGraph": {
       "images": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
+  },
+  "/impressum": {
+    "title": "Impressum | Brehm Consulting - Unternehmensberatung Hamburg",
+    "description": "Impressum und rechtliche Angaben der Brehm Consulting, Unternehmensberatung für StartUps, Marketing und Sales mit Sitz in Hamburg.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
+  },
+  "/datenschutz": {
+    "title": "Datenschutzerklärung | Brehm Consulting",
+    "description": "Datenschutzerklärung der Brehm Consulting. Informationen zum Umgang mit Ihren personenbezogenen Daten gemäß DSGVO.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
   }
 }
