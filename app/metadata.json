@@ -40,5 +40,12 @@
     "openGraph": {
       "images": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
     }
+  },
+  "/webdesign": {
+    "title": "Web-Konzepte | Internetseiten, Apps, CMS & KI-Lösungen für Unternehmen",
+    "description": "Digitale Lösungen für StartUps und Mittelstand: Erstellung von Internetseiten, Apps, Content Management Systeme, User-Verwaltung, Abrechnungssysteme, KI-gesteuertes SEO & GEO Management und KI Agent Implementierung. Moderne Technologie mit Next.js und Echtzeit-Datenbank.",
+    "openGraph": {
+      "images": "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+    }
   }
 }
