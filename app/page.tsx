@@ -437,8 +437,8 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 max-w-2xl mx-auto">
                 <div className="space-y-2">
                   <h3 className="font-semibold">Telefon</h3>
-                  <a href="tel:+4940209719000" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
-                    +49 (40) 20 97 1900
+                  <a href="tel:+494020972001" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
+                    +49 (40) 20972001
                   </a>
                 </div>
                 <div className="space-y-2">

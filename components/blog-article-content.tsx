@@ -138,8 +138,8 @@ export default function BlogArticleContent({ post }: BlogArticleContentProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90">
-                <a href="tel:+494020971900">
-                  +49 (40) 20 97 1900
+                <a href="tel:+494020972001">
+                  +49 (40) 20972001
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">

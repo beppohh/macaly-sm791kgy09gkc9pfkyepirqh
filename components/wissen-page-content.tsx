@@ -107,7 +107,7 @@ export default function WissenPageContent() {
                 Unsere Leistungen ansehen
               </a>
               <a
-                href="tel:+494020971900"
+                href="tel:+494020972001"
                 className="inline-flex items-center justify-center rounded-lg text-base font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring border-2 border-input bg-background hover:bg-accent hover:text-accent-foreground h-12 px-10"
               >
                 Jetzt Beratung anfragen
