@@ -4,17 +4,27 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [leistungenOpen, setLeistungenOpen] = useState(false);
 
-  const navLinks = [
+  const leistungenLinks = [
     { href: '/marketing', label: 'Marketing' },
     { href: '/sales', label: 'Sales' },
+    { href: '/webdesign', label: 'Web-Konzepte' },
+  ];
+
+  const navLinks = [
     { href: '/wissen', label: 'Sales & Marketing Wissen' },
     { href: '/blog', label: 'Blog' },
-    { href: '/#services', label: 'Leistungen' },
     { href: '/#contact', label: 'Kontakt' },
   ];
 
@@ -37,6 +47,26 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            {/* Leistungen Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-foreground hover:text-secondary transition-colors outline-none">
+                Leistungen
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-48">
+                {leistungenLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link 
+                      href={link.href}
+                      className="w-full cursor-pointer"
+                    >
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {navLinks.map((link) => (
               <Link 
                 key={link.href}
@@ -70,6 +100,31 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-3">
+              {/* Mobile Leistungen Accordion */}
+              <div>
+                <button
+                  onClick={() => setLeistungenOpen(!leistungenOpen)}
+                  className="flex items-center justify-between w-full text-base font-medium text-foreground hover:text-secondary transition-colors py-2"
+                >
+                  Leistungen
+                  <ChevronDown className={`h-4 w-4 transition-transform ${leistungenOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {leistungenOpen && (
+                  <div className="pl-4 flex flex-col space-y-2 mt-2">
+                    {leistungenLinks.map((link) => (
+                      <Link 
+                        key={link.href}
+                        href={link.href} 
+                        className="text-base text-muted-foreground hover:text-secondary transition-colors py-1"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               {navLinks.map((link) => (
                 <Link 
                   key={link.href}
