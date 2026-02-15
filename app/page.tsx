@@ -2,7 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, TrendingUp, Users, Target, Briefcase, BookOpen, ExternalLink } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Target, Briefcase, BookOpen, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
+import ContactForm from '@/components/contact-form';
 
 export default function Home() {
   return (
@@ -423,44 +424,79 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* Contact Form Section */}
         <section id="contact" className="py-20 bg-gradient-to-br from-primary to-brand-navy text-white">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="max-w-3xl mx-auto text-center space-y-8">
-              <h2 className="text-3xl sm:text-4xl font-bold">
-                Bereit für strategisches Wachstum?
-              </h2>
-              <p className="text-lg text-white/90">
-                Lassen Sie uns gemeinsam Ihre Vertriebsstrategie optimieren und Ihr Unternehmen im Außer-Haus-Markt erfolgreich positionieren.
-              </p>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+                {/* Left Side - Info */}
+                <div className="lg:col-span-2 space-y-8">
+                  {/* Stefan Brehm Photo */}
+                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 mx-auto lg:mx-0 rounded-full overflow-hidden border-4 border-secondary/30 shadow-2xl">
+                    <Image
+                      src="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/hb952azyypb3oi7vtk3osti2/sm791kgy09gkc9pfkyepirqh/muin2KXKC7KO0P4CsBkPJ.png"
+                      alt="Stefan Brehm - Geschäftsführer Brehm Consulting"
+                      fill
+                      className="object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                      Bereit für strategisches Wachstum?
+                    </h2>
+                    <p className="text-lg text-white/90">
+                      Lassen Sie uns gemeinsam Ihre Vertriebsstrategie optimieren und Ihr Unternehmen im Außer-Haus-Markt erfolgreich positionieren.
+                    </p>
+                  </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 max-w-2xl mx-auto">
-                <div className="space-y-2">
-                  <h3 className="font-semibold">Telefon</h3>
-                  <a href="tel:+4940209719000" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
-                    +49 (40) 20 97 1900
-                  </a>
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                        <Phone className="h-5 w-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-1">Telefon</h3>
+                        <a href="tel:+494020972001" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
+                          +49 (40) 20972001
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                        <Mail className="h-5 w-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-1">E-Mail</h3>
+                        <a href="mailto:service@brehm-consulting.com" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
+                          service@brehm-consulting.com
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0">
+                        <MapPin className="h-5 w-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-1">Adresse</h3>
+                        <p className="text-white/80">
+                          Emil-Andresen-Straße 90g<br />
+                          22529 Hamburg
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 text-sm text-white/60">
+                    <p>Spezialisiert auf Deutschland & Schweiz</p>
+                  </div>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-semibold">E-Mail</h3>
-                  <a href="mailto:service@brehm-consulting.com" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium">
-                    service@brehm-consulting.com
-                  </a>
+
+                {/* Right Side - Form */}
+                <div className="lg:col-span-3">
+                  <ContactForm />
                 </div>
-              </div>
-
-              <div className="pt-4">
-                <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-white">
-                  <a href="mailto:service@brehm-consulting.com">
-                    Jetzt Beratungsgespräch vereinbaren
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
-
-              <div className="pt-8 text-sm text-white/70">
-                <p>Emil-Andresen-Straße 90g, 22529 Hamburg</p>
-                <p className="mt-2">Spezialisiert auf Deutschland & Schweiz</p>
               </div>
             </div>
           </div>

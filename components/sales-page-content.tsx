@@ -778,8 +778,8 @@ export default function SalesPageContent() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4">
                   <div className="space-y-2">
                     <h4 className="font-semibold">Telefon</h4>
-                    <a href="tel:+4940209719000" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium block">
-                      +49 (40) 20 97 1900
+                    <a href="tel:+494020972001" className="text-secondary hover:text-secondary/80 transition-colors text-lg font-medium block">
+                      +49 (40) 20972001
                     </a>
                   </div>
                   <div className="space-y-2">

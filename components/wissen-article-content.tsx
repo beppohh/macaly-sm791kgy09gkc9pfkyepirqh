@@ -491,11 +491,11 @@ export default function WissenArticleContent({ post }: WissenArticleContentProps
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="tel:+494020971900"
+                href="tel:+494020972001"
                 className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors bg-secondary text-secondary-foreground hover:bg-secondary/90 h-12 px-8"
               >
                 <Phone className="w-4 h-4" />
-                +49 (40) 20 97 1900
+                +49 (40) 20972001
               </a>
               <a
                 href="mailto:service@brehm-consulting.com"
