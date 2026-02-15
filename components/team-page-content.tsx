@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Sparkles, TrendingUp, Palette, Target, Database, LineChart } from 'lucide-react';
+import { Sparkles, TrendingUp, Palette, LineChart } from 'lucide-react';
 
 const teamMembers = [
   {
@@ -69,38 +69,7 @@ const teamMembers = [
     bio: 'Marion haucht Marken eine Seele ein. Ihre Arbeit reicht von der ersten vagen Idee bis zur finalen Kreation – kontinuierlich, ganzheitlich und mit Liebe zum Detail. Ob in Hamburg, im ICE oder in Mexico City: Unterschiedliche Orte sind für sie stets Quelle der Inspiration.',
     highlight: '"To do things right, first you need love, then technique" – Antoni Gaudí'
   },
-  {
-    name: 'Oliver Wizmer',
-    title: 'Sales Specialist',
-    image: 'https://brehm-consulting.com/wp-content/uploads/2025/01/oliver-wizmer.jpg',
-    icon: Target,
-    tagline: '20+ Jahre Go-to-Market-Management & Sales Leadership',
-    strengths: [
-      'Komplexe Go-to-Market-Prozesse ganzheitlich entwickeln',
-      'Marktanalyse & innovative Vertriebsstrategien',
-      'Teamaufbau & Führung mit Fokus auf Agilität',
-      'Erfahrung mit börsennotierten Unternehmen',
-      'Maßgeschneiderte, nachhaltige Vertriebskonzepte'
-    ],
-    bio: 'Oliver bringt fundierte Expertise im Sales Leadership und hat mit führenden Unternehmen zusammengearbeitet. Sein praxisnaher Ansatz: Von der Marktanalyse über Vertriebsstrategien bis zur operativen Umsetzung – alles mit Fokus auf langfristige Kundenbeziehungen und nachhaltiges Wachstum.',
-    highlight: 'Spezialist für die Optimierung von Go-to-Market-Strategien'
-  },
-  {
-    name: 'Sven Brenner',
-    title: 'Salesforce Specialist',
-    image: 'https://brehm-consulting.com/wp-content/uploads/2025/01/svenbrenner.jpg',
-    icon: Database,
-    tagline: 'Salesforce-Experte seit 2017 für maßgeschneiderte CRM-Lösungen',
-    strengths: [
-      'Tiefgehende Analyse von Geschäftsprozessen',
-      'Passgenaue Umsetzung in Salesforce-Lösungen',
-      'Innovative Ansätze für komplexe Prozesse',
-      'Erfahrung in internationalen Unternehmen',
-      'Branchenübergreifende Expertise'
-    ],
-    bio: 'Sven ist fasziniert von den vielseitigen Möglichkeiten der Salesforce-Plattform. Er analysiert individuelle Anforderungen tiefgehend und setzt sie passgenau um. Seine Erfahrung in mittelständischen und börsennotierten Unternehmen ermöglicht maßgeschneiderte Lösungen für jede Branche.',
-    highlight: 'Fokus auf nachhaltige Mehrwerte durch effiziente Prozessabbildung'
-  }
+
 ];
 
 export default function TeamPageContent() {
@@ -124,7 +93,7 @@ export default function TeamPageContent() {
             </h1>
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Ein einzigartiges Netzwerk aus erfolgreichen Gründern, Marketing-Experten, Sales-Spezialisten und kreativen Köpfen. 
-              Gemeinsam bringen wir über 100 Jahre kombinierte Expertise für Ihren Erfolg.
+              Gemeinsam bringen wir über 80 Jahre kombinierte Expertise für Ihren Erfolg.
             </p>
           </div>
         </div>
